@@ -24,3 +24,5 @@ De volgende gegevens zijn voorbeeldwaarden:
 Het contactformulier heeft geen server: het opent WhatsApp met de ingevulde aanvraag.
 
 Klantreviews staan nog niet op de site. Dat blok komt erbij zodra er echte reviews zijn.
+
+De WhatsApp-beeldmerken in `assets/whatsapp/` komen ongewijzigd uit het officiële merkpakket van Meta (WhatsApp Brand Resource Center) en vallen onder de richtlijnen daarvan.
