@@ -33,6 +33,9 @@ details[open] .faq-plus{transform:rotate(45deg)}
 @keyframes openR{from{transform:translateX(0)}}
 @keyframes pulse{from{transform:scale(.2);opacity:.9}to{transform:scale(1);opacity:0}}
 .pulse{transform-box:view-box;transform-origin:240px 240px;animation:pulse 3.2s ease-out infinite}
+@keyframes barIn{from{opacity:0;transform:translateY(24px);visibility:hidden}to{opacity:1;transform:none;visibility:visible}}
+@supports (animation-timeline: scroll()){.contactbar>div{animation:barIn linear both;animation-timeline:scroll(root);animation-range:320px 560px}}
+@media (max-width:520px){.nav-long{display:none}}
 @keyframes lift{from{transform:translateY(56px)}to{transform:none}}
 @supports (animation-timeline: view()){@media (prefers-reduced-motion:no-preference){.reveal{animation:lift linear both;animation-timeline:view();animation-range:entry 0% entry 70%}}}
 @media (prefers-reduced-motion:reduce){.sash,.pulse{animation:none}}
@@ -51,7 +54,7 @@ html{scroll-behavior:smooth}
 <header style="position: relative; padding: 20px 20px 0">
 <div style="max-width: 1280px; margin: 0 auto; background: #1B1F22; border: 1px solid #33393E; border-radius: 999px; padding: 10px 10px 10px 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
 <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF; min-height: 44px">
-<svg aria-hidden="true" width="57" height="28" viewBox="0 6 97 48" fill="none" style="flex: none"><polygon points="0,54 19,6 29,6 48,54 38,54 24,18.5 10,54" fill="currentColor"/><rect x="19.5" y="36" width="9" height="9" fill="#1F4FE0"/><rect x="56" y="6" width="10" height="48" fill="currentColor"/><path d="M95 0L70 30L95 60" stroke="currentColor" stroke-width="10"/></svg>
+<svg aria-hidden="true" width="57" height="28" viewBox="0 6 97 48" fill="none" style="flex: none"><polygon points="0,54 19,6 29,6 48,54 38,54 24,18.5 10,54" fill="currentColor"/><polygon points="12.6,47 14.9,39 33.1,39 35.4,47" fill="currentColor"/><path d="M95 0L70 30L95 60" stroke="#1F4FE0" stroke-width="10"/><rect x="56" y="6" width="10" height="48" fill="currentColor"/></svg>
 <span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; letter-spacing: -0.025em; line-height: 1"><span style="font-weight: 500">Kozijntechniek</span></span>
 </a>
 <nav class="nav-links" aria-label="Hoofdmenu" style="display: flex; gap: 22px; font-size: 15px; font-weight: 500">
@@ -64,7 +67,7 @@ html{scroll-behavior:smooth}
 </nav>
 <div style="display: flex; align-items: center; gap: 18px">
 <a class="nav-phone" href="tel:+31639282968" style="font-weight: 600; font-size: 15px; text-decoration: none; padding: 12px 0; color: #FFFFFF">06 39 28 29 68</a>
-<a href="#offerte" style="background: #FFFFFF; color: #101315; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 22px; border-radius: 999px; white-space: nowrap">Offerte aanvragen</a>
+<a href="#offerte" style="background: #FFFFFF; color: #101315; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 22px; border-radius: 999px; white-space: nowrap">Offerte<span class="nav-long">&nbsp;aanvragen</span></a>
 </div>
 </div>
 </header>
@@ -97,8 +100,8 @@ html{scroll-behavior:smooth}
 <span style="font-size: 14px; color: #B9C1C7">kozijnen geplaatst</span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 36px; letter-spacing: -0.03em; line-height: 1">9,4</span>
-<span style="font-size: 14px; color: #B9C1C7">uit 86 klantreviews</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 36px; letter-spacing: -0.03em; line-height: 1">80 km</span>
+<span style="font-size: 14px; color: #B9C1C7">werkgebied rond Lelystad</span>
 </div>
 </div>
 </div>
@@ -529,31 +532,6 @@ html{scroll-behavior:smooth}
 </div>
 </section>
 
-<section id="reviews">
-<div style="max-width: 1304px; margin: 0 auto; padding: 0 12px 112px; display: flex; flex-wrap: wrap; gap: 12px">
-<figure style="margin: 0; flex: 1.4 1 480px; min-width: 0; background: #FFFFFF; border-radius: 28px; padding: clamp(28px, 4vw, 56px); display: flex; flex-direction: column; justify-content: space-between; gap: 48px; min-height: 380px; box-sizing: border-box">
-<span style="align-self: flex-start; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border: 1px dashed #7A848C; border-radius: 999px; padding: 6px 12px; color: #555D63">Voorbeeldreview</span>
-<blockquote style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: clamp(24px, 3vw, 40px); line-height: 1.15; letter-spacing: -0.025em">“In twee dagen zaten alle kozijnen erin. Netjes gewerkt, alles opgeruimd en het huis is merkbaar stiller en warmer.”</blockquote>
-<figcaption style="display: flex; align-items: center; gap: 14px; font-size: 15px">
-<span aria-hidden="true" style="width: 48px; height: 48px; border-radius: 50%; background: #E4E5E0; display: block"></span>
-<span><span style="font-weight: 600">[NAAM KLANT]</span><br><span style="color: #555D63">Nieuwe kozijnen en voordeur</span></span>
-</figcaption>
-</figure>
-<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<div style="flex: 1 1 auto; background: #101315; color: #FFFFFF; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px">
-<span style="font-size: 14px; color: #D5DADE">Gemiddelde beoordeling</span>
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(64px, 8vw, 112px); letter-spacing: -0.05em; line-height: 0.9">9,4</span>
-<span style="font-size: 14px; color: #D5DADE">uit 86 klantreviews</span>
-</div>
-<figure style="margin: 0; background: #FFFFFF; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
-<span style="align-self: flex-start; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; border: 1px dashed #7A848C; border-radius: 999px; padding: 6px 12px; color: #555D63">Voorbeeldreview</span>
-<blockquote style="margin: 0; font-size: 17px; line-height: 1.5">“Raam klemde al maanden. Binnen twee dagen stond de monteur er en een uur later was het klaar.”</blockquote>
-<figcaption style="font-size: 14px; color: #555D63"><span style="font-weight: 600; color: #101315">[NAAM KLANT]</span> · Reparatie</figcaption>
-</figure>
-</div>
-</div>
-</section>
-
 <section id="werkgebied" style="padding: 0 12px 112px">
 <div style="background: #FFFFFF; border-radius: 28px; overflow: hidden">
 <div style="max-width: 1280px; margin: 0 auto; padding: clamp(40px, 6vw, 88px) clamp(20px, 4vw, 56px); display: flex; flex-wrap: wrap; align-items: center; gap: clamp(32px, 5vw, 72px)">
@@ -711,7 +689,7 @@ html{scroll-behavior:smooth}
 <div style="max-width: 1280px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 56px) 32px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-wrap: wrap; gap: 40px 64px">
 <div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; align-items: center; gap: 12px"><svg aria-hidden="true" width="73" height="36" viewBox="0 6 97 48" fill="none" style="flex: none"><polygon points="0,54 19,6 29,6 48,54 38,54 24,18.5 10,54" fill="currentColor"/><rect x="19.5" y="36" width="9" height="9" fill="#1F4FE0"/><rect x="56" y="6" width="10" height="48" fill="currentColor"/><path d="M95 0L70 30L95 60" stroke="currentColor" stroke-width="10"/></svg><span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; letter-spacing: -0.025em; line-height: 1"><span style="font-weight: 500">Kozijntechniek</span></span></div>
+<div style="display: flex; align-items: center; gap: 12px"><svg aria-hidden="true" width="73" height="36" viewBox="0 6 97 48" fill="none" style="flex: none"><polygon points="0,54 19,6 29,6 48,54 38,54 24,18.5 10,54" fill="currentColor"/><polygon points="12.6,47 14.9,39 33.1,39 35.4,47" fill="currentColor"/><path d="M95 0L70 30L95 60" stroke="#1F4FE0" stroke-width="10"/><rect x="56" y="6" width="10" height="48" fill="currentColor"/></svg><span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; letter-spacing: -0.025em; line-height: 1"><span style="font-weight: 500">Kozijntechniek</span></span></div>
 <div style="font-size: 15px; line-height: 1.6; color: #B9C1C7; max-width: 320px">Specialist in kunststof kozijnen: plaatsen, reparatie en onderhoud. Vanuit Lelystad, tot 80 km in de omtrek.</div>
 <div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 8px">
 <span style="border: 1px dashed #7A848C; border-radius: 999px; padding: 10px 16px; font-size: 13px; color: #B9C1C7">[KEURMERK 1]</span>
@@ -742,7 +720,7 @@ html{scroll-behavior:smooth}
 </div>
 </section>
 
-<nav aria-label="Snel contact" style="position: sticky; bottom: 12px; z-index: 50; display: flex; justify-content: center; padding: 0 12px 12px; pointer-events: none">
+<nav class="contactbar" aria-label="Snel contact" style="position: sticky; bottom: 12px; z-index: 50; display: flex; justify-content: center; padding: 0 12px 12px; pointer-events: none">
 <div style="pointer-events: auto; display: flex; align-items: center; gap: 6px; background: rgba(16,19,21,0.92); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border: 1px solid #4A535A; border-radius: 999px; padding: 6px; box-shadow: 0 16px 40px rgba(0,0,0,0.3)">
 <a href="tel:+31639282968" style="display: flex; align-items: center; gap: 8px; min-height: 48px; box-sizing: border-box; padding: 0 18px; border-radius: 999px; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 4 4L14 11l5 2v4a2 2 0 0 1-2 2A14 14 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Bel</a>
 <a href="https://wa.me/31639282968?text=Hallo%20AK%20Kozijntechniek%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen." style="display: flex; align-items: center; gap: 8px; min-height: 48px; box-sizing: border-box; padding: 0 18px; border-radius: 999px; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"><path d="M3 4h16v11H10l-4.5 4v-4H3z"/></svg>WhatsApp</a>
