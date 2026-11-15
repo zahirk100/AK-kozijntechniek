@@ -7,10 +7,16 @@
 <meta name="description" content="AK Kozijntechniek plaatst, repareert en onderhoudt kunststof kozijnen, ramen en deuren. Vanuit Lelystad, tot 80 km in de omtrek. Bel of app 06 39 28 29 68.">
 <meta name="theme-color" content="#101315">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<meta name="format-detection" content="telephone=no">
+<link rel="preload" href="assets/fonts/space-grotesk-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/inter-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/inter-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/space-grotesk-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/space-grotesk-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/space-grotesk-latin-700-normal.woff2) format('woff2')}
 body{margin:0;font-family:Inter,system-ui,sans-serif;color:#101315;background:#F3F3F0}
 a{color:#101315}a:hover{color:#000000}
 summary{cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
@@ -63,7 +69,7 @@ html{scroll-behavior:smooth}
 </a>
 <nav class="nav-links" aria-label="Hoofdmenu" style="display: flex; gap: 22px; font-size: 15px; font-weight: 500">
 <a href="#diensten" style="text-decoration: none; padding: 12px 0; color: #FFFFFF">Diensten</a>
-<a href="#producten" style="text-decoration: none; padding: 12px 0; color: #FFFFFF">Producten</a>
+<a href="#producten" style="text-decoration: none; padding: 12px 0; color: #FFFFFF">Ramen en deuren</a>
 <a href="#kleuren" style="text-decoration: none; padding: 12px 0; color: #FFFFFF">Samenstellen</a>
 <a href="#werkwijze" style="text-decoration: none; padding: 12px 0; color: #FFFFFF">Werkwijze</a>
 <a href="#projecten" style="text-decoration: none; padding: 12px 0; color: #FFFFFF">Projecten</a>
@@ -79,7 +85,7 @@ html{scroll-behavior:smooth}
 </summary>
 <nav aria-label="Mobiel menu" style="position: absolute; top: calc(100% + 10px); left: 0; right: 0; z-index: 60; background: #1B1F22; border: 1px solid #33393E; border-radius: 24px; padding: 10px; display: flex; flex-direction: column; box-shadow: 0 24px 60px rgba(0,0,0,0.5)">
 <a href="#diensten" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Diensten<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
-<a href="#producten" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Assortiment<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<a href="#producten" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Ramen en deuren<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
 <a href="#kleuren" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Kozijn samenstellen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
 <a href="#werkwijze" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Werkwijze<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
 <a href="#projecten" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Projecten<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
@@ -101,17 +107,17 @@ html{scroll-behavior:smooth}
 
 <div style="flex: 1.15 1 500px; min-width: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 28px">
-<div class="rise" style="align-self: flex-start; display: flex; align-items: center; gap: 10px; border: 1px solid #4A535A; border-radius: 999px; padding: 9px 16px; font-size: 13px; font-weight: 600; letter-spacing: 0.04em">
+<div class="rise" style="align-self: flex-start; display: flex; align-items: center; gap: 10px; border: 1px solid #4A535A; border-radius: 999px; padding: 9px 16px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em">
 <span aria-hidden="true" style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #6EE7A0"></span>
 <span>Ruim 7 jaar specialist in kunststof kozijnen</span>
 </div>
 <h1 class="rise rise-2" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(44px, 6.4vw, 100px); line-height: 0.94; letter-spacing: -0.045em; text-wrap: balance">Strak geplaatst. Jarenlang zorgeloos.</h1>
-<p class="rise rise-2" style="margin: 0; font-size: 19px; line-height: 1.55; color: #D5DADE; max-width: 520px">Kunststof kozijnen, ramen en deuren. Wij plaatsen, repareren en onderhouden, met één vakman als aanspreekpunt. Vanuit Lelystad, tot 80 km in de omtrek.</p>
+<p class="rise rise-2" style="margin: 0; font-size: 19px; line-height: 1.55; color: #D5DADE; max-width: 520px">Kunststof kozijnen, ramen en deuren. Wij <strong style="font-weight: 600; color: #FFFFFF">plaatsen, repareren en onderhouden</strong>, met één vakman als aanspreekpunt. Vanuit Lelystad, tot 80 km in de omtrek.</p>
 <div class="rise rise-3" style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px">
 <a href="#offerte" style="display: flex; align-items: center; gap: 12px; background: #1F4FE0; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 18px 20px 18px 28px; border-radius: 999px">Vraag een vrijblijvende offerte aan
 <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17L17 5M8 5h9v9"/></svg>
 </a>
-<a href="#producten" style="color: #FFFFFF; border: 1px solid #7A848C; text-decoration: none; font-weight: 600; font-size: 16px; padding: 17px 28px; border-radius: 999px">Bekijk het assortiment</a>
+<a href="#producten" style="color: #FFFFFF; border: 1px solid #7A848C; text-decoration: none; font-weight: 600; font-size: 16px; padding: 17px 28px; border-radius: 999px">Bekijk ramen en deuren</a>
 </div>
 </div>
 <div class="rise rise-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr)); gap: 24px; border-top: 1px solid #33393E; padding-top: 28px">
@@ -134,12 +140,12 @@ html{scroll-behavior:smooth}
 <img src="assets/img/woning-antraciet.jpg" alt="Voorbeeldfoto: bakstenen woning met antraciet kunststof kozijnen en een antraciet voordeur" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 84%">
 <div class="sash sash-l" aria-hidden="true" style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: #101315; border-right: 2px solid #33393E; box-sizing: border-box; transform: translateX(-101%)"></div>
 <div class="sash sash-r" aria-hidden="true" style="position: absolute; top: 0; right: 0; width: 50%; height: 100%; background: #101315; border-left: 2px solid #33393E; box-sizing: border-box; transform: translateX(101%)"></div>
-<div style="position: absolute; top: 16px; right: 16px; background: #FFFFFF; color: #101315; border-radius: 999px; padding: 9px 16px 9px 10px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 10px">
+<div style="position: absolute; top: 16px; right: 16px; background: #FFFFFF; color: #101315; border-radius: 999px; padding: 9px 16px 9px 10px; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 10px">
 <span aria-hidden="true" style="display: block; width: 20px; height: 20px; border-radius: 50%; background: #383E42"></span>Antraciet · RAL 7016
 </div>
 <div style="position: absolute; left: 16px; right: 16px; bottom: 16px; background: rgba(16,19,21,0.78); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.18); border-radius: 18px; padding: 18px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px">
 <span style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #D5DADE">Reparatie nodig?</span>
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #D5DADE">Reparatie nodig?</span>
 <span style="font-size: 15px">Meestal binnen 2 werkdagen geholpen</span>
 </span>
 <a href="tel:+31639282968" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; color: #FFFFFF; text-decoration: none; padding: 10px 0">06 39 28 29 68</a>
@@ -233,7 +239,7 @@ html{scroll-behavior:smooth}
 <span class="zoom" style="display: block; position: relative; height: 380px; border-radius: 22px; background: #E4E5E0"><img loading="lazy" decoding="async" src="assets/img/draairamen.jpg" alt="Voorbeeldfoto: wit kozijn met twee draairamen en uitzicht op herfstbomen" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 50%"></span>
 <span style="display: flex; flex-direction: column; gap: 4px; padding: 0 6px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Kozijnen en ramen</span>
-<span style="font-size: 15px; line-height: 1.5; color: #555D63">Vast, draaiend of kiepend, in elke maat en indeling.</span>
+<span style="font-size: 16px; line-height: 1.5; color: #555D63">Vast, draaiend of kiepend, in elke maat en indeling.</span>
 </span>
 </a>
 
@@ -241,7 +247,7 @@ html{scroll-behavior:smooth}
 <span class="zoom" style="display: block; position: relative; height: 380px; border-radius: 22px; background: #E4E5E0"><img loading="lazy" decoding="async" src="assets/img/raam-tuin.jpg" alt="Voorbeeldfoto: wit kunststof draai-kiepraam met greep en uitzicht op de tuin" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover"></span>
 <span style="display: flex; flex-direction: column; gap: 4px; padding: 0 6px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Draai-kiepramen</span>
-<span style="font-size: 15px; line-height: 1.5; color: #555D63">Op kiepstand ventileren, wijd open om te luchten.</span>
+<span style="font-size: 16px; line-height: 1.5; color: #555D63">Op kiepstand ventileren, wijd open om te luchten.</span>
 </span>
 </a>
 
@@ -249,7 +255,7 @@ html{scroll-behavior:smooth}
 <span class="zoom" style="display: block; position: relative; height: 380px; border-radius: 22px; background: #E4E5E0"><img loading="lazy" decoding="async" src="assets/img/voordeur.jpg" alt="Voorbeeldfoto: zwarte voordeur met glasstroken in een grijze gevel" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover"></span>
 <span style="display: flex; flex-direction: column; gap: 4px; padding: 0 6px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Voordeuren</span>
-<span style="font-size: 15px; line-height: 1.5; color: #555D63">Stevig, goed isolerend en in de stijl van uw woning.</span>
+<span style="font-size: 16px; line-height: 1.5; color: #555D63">Stevig, goed isolerend en in de stijl van uw woning.</span>
 </span>
 </a>
 
@@ -257,7 +263,7 @@ html{scroll-behavior:smooth}
 <span class="zoom" style="display: block; position: relative; height: 380px; border-radius: 22px; background: #E4E5E0"><img loading="lazy" decoding="async" src="assets/img/achterdeur.jpg" alt="Voorbeeldfoto: witte kunststof achterdeur met glas naar een balkon vol planten" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%"></span>
 <span style="display: flex; flex-direction: column; gap: 4px; padding: 0 6px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Achterdeuren</span>
-<span style="font-size: 15px; line-height: 1.5; color: #555D63">Veel licht, goed afsluitbaar en onderhoudsarm.</span>
+<span style="font-size: 16px; line-height: 1.5; color: #555D63">Veel licht, goed afsluitbaar en onderhoudsarm.</span>
 </span>
 </a>
 
@@ -265,7 +271,7 @@ html{scroll-behavior:smooth}
 <span class="zoom" style="display: block; position: relative; height: 380px; border-radius: 22px; background: #E4E5E0"><img loading="lazy" decoding="async" src="assets/img/pui-keuken.jpg" alt="Voorbeeldfoto: witte kunststof pui met glazen deuren in een keuken" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%"></span>
 <span style="display: flex; flex-direction: column; gap: 4px; padding: 0 6px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Schuifpuien</span>
-<span style="font-size: 15px; line-height: 1.5; color: #555D63">Grote glasvlakken die licht lopen en strak sluiten.</span>
+<span style="font-size: 16px; line-height: 1.5; color: #555D63">Grote glasvlakken die licht lopen en strak sluiten.</span>
 </span>
 </a>
 
@@ -273,7 +279,7 @@ html{scroll-behavior:smooth}
 <span class="zoom" style="display: block; position: relative; height: 380px; border-radius: 22px; background: #E4E5E0"><img loading="lazy" decoding="async" src="assets/img/tuindeuren.jpg" alt="Voorbeeldfoto: witte kunststof tuindeuren in een eetkamer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%"></span>
 <span style="display: flex; flex-direction: column; gap: 4px; padding: 0 6px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Tuindeuren</span>
-<span style="font-size: 15px; line-height: 1.5; color: #555D63">Dubbel openslaand, zo loopt u de tuin in.</span>
+<span style="font-size: 16px; line-height: 1.5; color: #555D63">Dubbel openslaand, zo loopt u de tuin in.</span>
 </span>
 </a>
 
@@ -281,7 +287,7 @@ html{scroll-behavior:smooth}
 <span class="zoom" style="display: block; position: relative; height: 380px; border-radius: 22px; background: #E4E5E0"><img loading="lazy" decoding="async" src="assets/img/woning-antraciet.jpg" alt="Voorbeeldfoto: woning met antraciet kunststof kozijnen en een antraciet voordeur" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 88%"></span>
 <span style="display: flex; flex-direction: column; gap: 4px; padding: 0 6px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Complete gevel</span>
-<span style="font-size: 15px; line-height: 1.5; color: #555D63">Alle kozijnen en deuren in één keer vervangen.</span>
+<span style="font-size: 16px; line-height: 1.5; color: #555D63">Alle kozijnen en deuren in één keer vervangen.</span>
 </span>
 </a>
 
@@ -289,7 +295,7 @@ html{scroll-behavior:smooth}
 <span class="zoom" style="display: block; position: relative; height: 380px; border-radius: 22px; background: #E4E5E0"><img loading="lazy" decoding="async" src="assets/img/raamgreep.jpg" alt="Voorbeeldfoto: goudkleurige raamgreep op een wit kunststof kozijn" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover"></span>
 <span style="display: flex; flex-direction: column; gap: 4px; padding: 0 6px">
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em">Hang- en sluitwerk</span>
-<span style="font-size: 15px; line-height: 1.5; color: #555D63">Grepen, scharnieren en sloten die soepel blijven.</span>
+<span style="font-size: 16px; line-height: 1.5; color: #555D63">Grepen, scharnieren en sloten die soepel blijven.</span>
 </span>
 </a>
 
@@ -317,12 +323,12 @@ html{scroll-behavior:smooth}
 <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: clamp(24px, 2.8vw, 38px); line-height: 1.18; letter-spacing: -0.025em; text-wrap: pretty">Een kozijn is pas goed als u er nooit meer aan hoeft te denken. Daarom meten wij zelf in, monteren wij zelf en komen wij zelf terug als er iets is.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 28px 24px">
 <div style="display: flex; flex-direction: column; gap: 6px">
-<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 44px; letter-spacing: -0.03em; line-height: 1">7+ jaar</div>
-<div style="font-size: 14px; color: #555D63">ervaring in het vak</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 44px; letter-spacing: -0.03em; line-height: 1">1 vakman</div>
+<div style="font-size: 14px; color: #555D63">als vast aanspreekpunt</div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
-<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 44px; letter-spacing: -0.03em; line-height: 1">1.250+</div>
-<div style="font-size: 14px; color: #555D63">kozijnen geplaatst</div>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 44px; letter-spacing: -0.03em; line-height: 1">€ 0</div>
+<div style="font-size: 14px; color: #555D63">voor inmeten en offerte</div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <div style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 44px; letter-spacing: -0.03em; line-height: 1">10 jaar</div>
@@ -455,9 +461,9 @@ html{scroll-behavior:smooth}
 <span style="flex: none; width: 56px; height: 56px; border-radius: 50%; background: #101315; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">1</span>
 <span aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #101315; margin-right: -24px"></span>
 </div>
-<span style="align-self: flex-start; font-size: 13px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">Vandaag nog</span>
+<span style="align-self: flex-start; font-size: 14px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">Vandaag nog</span>
 <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Contact</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #555D63">Bel, app of vul het formulier in. U krijgt dezelfde werkdag een reactie.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555D63">Bel, app of vul het formulier in. U krijgt dezelfde werkdag een reactie.</p>
 </li>
 
 <li style="display: flex; flex-direction: column; gap: 18px; padding-right: 24px">
@@ -465,9 +471,9 @@ html{scroll-behavior:smooth}
 <span style="flex: none; width: 56px; height: 56px; border-radius: 50%; background: #101315; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">2</span>
 <span aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #101315; margin-right: -24px"></span>
 </div>
-<span style="align-self: flex-start; font-size: 13px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">Binnen 1 week</span>
+<span style="align-self: flex-start; font-size: 14px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">Binnen 1 week</span>
 <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Inmeten aan huis</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #555D63">Wij komen langs, meten alles op en nemen kleurstalen mee. Gratis en vrijblijvend.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555D63">Wij komen langs, meten alles op en nemen kleurstalen mee. Gratis en vrijblijvend.</p>
 </li>
 
 <li style="display: flex; flex-direction: column; gap: 18px; padding-right: 24px">
@@ -475,9 +481,9 @@ html{scroll-behavior:smooth}
 <span style="flex: none; width: 56px; height: 56px; border-radius: 50%; background: #101315; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">3</span>
 <span aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #101315; margin-right: -24px"></span>
 </div>
-<span style="align-self: flex-start; font-size: 13px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">Binnen 2 werkdagen</span>
+<span style="align-self: flex-start; font-size: 14px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">Binnen 2 werkdagen</span>
 <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Offerte met vaste prijs</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #555D63">Eén heldere offerte, inclusief montage en afvoer. Geen verrassingen achteraf.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555D63">Eén heldere offerte, inclusief montage en afvoer. Geen verrassingen achteraf.</p>
 </li>
 
 <li style="display: flex; flex-direction: column; gap: 18px; padding-right: 24px">
@@ -485,18 +491,18 @@ html{scroll-behavior:smooth}
 <span style="flex: none; width: 56px; height: 56px; border-radius: 50%; background: #101315; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px">4</span>
 <span aria-hidden="true" style="flex: 1 1 auto; height: 2px; background: #101315; margin-right: -24px"></span>
 </div>
-<span style="align-self: flex-start; font-size: 13px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">6 tot 8 weken</span>
+<span style="align-self: flex-start; font-size: 14px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">6 tot 8 weken</span>
 <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Productie op maat</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #555D63">Uw kozijnen worden op maat gemaakt. Ondertussen plannen wij samen de montagedag.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555D63">Uw kozijnen worden op maat gemaakt. Ondertussen plannen wij samen de montagedag.</p>
 </li>
 
 <li style="display: flex; flex-direction: column; gap: 18px; padding-right: 24px">
 <div style="display: flex; align-items: center; gap: 0">
 <span style="flex: none; width: 56px; height: 56px; border-radius: 50%; background: #1F4FE0; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg></span>
 </div>
-<span style="align-self: flex-start; font-size: 13px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">1 tot 3 dagen</span>
+<span style="align-self: flex-start; font-size: 14px; font-weight: 600; background: #F3F3F0; border-radius: 999px; padding: 6px 12px">1 tot 3 dagen</span>
 <h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Montage en oplevering</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #555D63">Wij plaatsen, werken af en voeren de oude kozijnen af. Samen lopen we alles na.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555D63">Wij plaatsen, werken af en voeren de oude kozijnen af. Samen lopen wij alles na.</p>
 </li>
 
 </ol>
@@ -517,7 +523,7 @@ html{scroll-behavior:smooth}
 <div style="padding: 0 0 112px; display: flex; flex-direction: column; gap: 48px">
 <div style="max-width: 1280px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px">
 <h2 class="reveal" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(36px, 5.4vw, 76px); line-height: 0.98; letter-spacing: -0.04em">Recent opgeleverd</h2>
-<p style="margin: 0; font-size: 15px; color: #555D63">Veeg of scrol opzij voor meer projecten</p>
+<p style="margin: 0; font-size: 16px; color: #555D63">Veeg of scrol opzij voor meer projecten</p>
 </div>
 <div class="rail" tabindex="0" role="region" aria-label="Projecten" style="display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 max(12px, calc((100% - 1280px) / 2))">
 <figure class="zoom" style="margin: 0; flex: 0 0 min(78vw, 520px); height: 600px; position: relative; border-radius: 28px; scroll-snap-align: center; background: #101315; color: #FFFFFF">
@@ -560,7 +566,7 @@ html{scroll-behavior:smooth}
 <div style="background: #FFFFFF; border-radius: 28px; overflow: hidden">
 <div style="max-width: 1280px; margin: 0 auto; padding: clamp(40px, 6vw, 88px) clamp(20px, 4vw, 56px); display: flex; flex-wrap: wrap; align-items: center; gap: clamp(32px, 5vw, 72px)">
 <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<div style="align-self: flex-start; border: 1px solid #101315; border-radius: 999px; padding: 8px 16px; font-size: 13px; font-weight: 600; letter-spacing: 0.04em">Werkgebied</div>
+<div style="align-self: flex-start; border: 1px solid #101315; border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em">Werkgebied</div>
 <h2 class="reveal" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(36px, 5.4vw, 76px); line-height: 0.98; letter-spacing: -0.04em; text-wrap: balance">Vanuit Lelystad, tot 80 km in de omtrek</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #555D63; max-width: 480px">Onze standplaats is Lelystad. Binnen een straal van 80 kilometer komen wij bij u langs voor inmeten, plaatsen, reparatie en onderhoud.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 8px; max-width: 520px">
@@ -624,23 +630,23 @@ html{scroll-behavior:smooth}
 <div style="flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <details open style="background: #FFFFFF; border-radius: 20px; padding: 8px 28px">
 <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em; padding: 18px 0">Wat kost een nieuw kunststof kozijn?<svg class="faq-plus" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#101315" stroke-width="2" stroke-linecap="round" style="flex: none"><path d="M11 4v14M4 11h14"/></svg></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">Dat hangt af van de maat, het type, de kleur en het glas. Na het inmeten ontvangt u een offerte met een vaste prijs, inclusief montage en afvoer van de oude kozijnen.</p>
+<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">Dat hangt af van de maat, het type, de kleur en het glas. Na het inmeten ontvangt u een offerte met een <strong style="font-weight: 600; color: #101315">vaste prijs</strong>, inclusief montage en afvoer van de oude kozijnen.</p>
 </details>
 <details style="background: #FFFFFF; border-radius: 20px; padding: 8px 28px">
 <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em; padding: 18px 0">Hoe lang duurt het plaatsen?<svg class="faq-plus" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#101315" stroke-width="2" stroke-linecap="round" style="flex: none"><path d="M11 4v14M4 11h14"/></svg></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">De levertijd is ongeveer 6 tot 8 weken na akkoord. De montage zelf duurt gemiddeld 1 tot 3 dagen, afhankelijk van het aantal kozijnen.</p>
+<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">De levertijd is ongeveer <strong style="font-weight: 600; color: #101315">6 tot 8 weken</strong> na akkoord. De montage zelf duurt gemiddeld <strong style="font-weight: 600; color: #101315">1 tot 3 dagen</strong>, afhankelijk van het aantal kozijnen.</p>
 </details>
 <details style="background: #FFFFFF; border-radius: 20px; padding: 8px 28px">
 <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em; padding: 18px 0">Hoe snel komen jullie voor een reparatie?<svg class="faq-plus" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#101315" stroke-width="2" stroke-linecap="round" style="flex: none"><path d="M11 4v14M4 11h14"/></svg></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">Meestal binnen 2 werkdagen. Sluit een raam of deur niet meer? Bel dan direct, dan zoeken we zo snel mogelijk een oplossing.</p>
+<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">Meestal <strong style="font-weight: 600; color: #101315">binnen 2 werkdagen</strong>. Sluit een raam of deur niet meer? Bel dan direct, dan zoeken wij zo snel mogelijk een oplossing.</p>
 </details>
 <details style="background: #FFFFFF; border-radius: 20px; padding: 8px 28px">
 <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em; padding: 18px 0">Repareren jullie ook kozijnen van een andere leverancier?<svg class="faq-plus" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#101315" stroke-width="2" stroke-linecap="round" style="flex: none"><path d="M11 4v14M4 11h14"/></svg></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">Ja. Wij repareren kozijnen van vrijwel alle merken en systemen, ook als wij ze niet zelf hebben geplaatst.</p>
+<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px"><strong style="font-weight: 600; color: #101315">Ja.</strong> Wij repareren kozijnen van vrijwel alle merken en systemen, ook als wij ze niet zelf hebben geplaatst.</p>
 </details>
 <details style="background: #FFFFFF; border-radius: 20px; padding: 8px 28px">
 <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: -0.01em; padding: 18px 0">Hoe vaak is onderhoud nodig?<svg class="faq-plus" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#101315" stroke-width="2" stroke-linecap="round" style="flex: none"><path d="M11 4v14M4 11h14"/></svg></summary>
-<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">Kunststof is onderhoudsarm, niet onderhoudsvrij. Wij adviseren elke twee jaar een controle waarbij we beslag smeren, ramen afstellen en rubbers nalopen.</p>
+<p style="margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #555D63; max-width: 640px">Kunststof is onderhoudsarm, niet onderhoudsvrij. Wij adviseren <strong style="font-weight: 600; color: #101315">elke twee jaar</strong> een controle waarbij wij beslag smeren, ramen afstellen en rubbers nalopen.</p>
 </details>
 </div>
 </div>
@@ -666,13 +672,6 @@ html{scroll-behavior:smooth}
 <span style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
 <span style="font-size: 14px; color: #FFFFFF">WhatsApp</span>
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Stuur ons een bericht</span>
-</span>
-</a>
-<a href="mailto:info@uwbedrijf.nl" style="display: flex; align-items: center; gap: 18px; background: #1B1F22; border: 1px solid #33393E; border-radius: 20px; padding: 18px 20px; text-decoration: none; color: #FFFFFF">
-<span aria-hidden="true" style="flex: none; width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#101315" stroke-width="2" stroke-linejoin="round"><path d="M3 5h16v12H3z"/><path d="M3 6l8 6 8-6"/></svg></span>
-<span style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
-<span style="font-size: 14px; color: #B9C1C7">Mail ons</span>
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 24px; letter-spacing: -0.02em; overflow-wrap: anywhere">info@uwbedrijf.nl</span>
 </span>
 </a>
 </div>
@@ -705,39 +704,42 @@ html{scroll-behavior:smooth}
 <textarea id="f-bericht" name="bericht" rows="3" style="border: 1px solid #7A848C; border-radius: 14px; padding: 14px 16px; font: inherit; font-size: 16px; box-sizing: border-box; width: 100%; resize: vertical; background: #F3F3F0"></textarea>
 </div>
 <button type="submit" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: #0F7B4F; color: #FFFFFF; border: 0; border-radius: 999px; font: inherit; font-weight: 600; font-size: 16px; height: 58px; cursor: pointer"><img loading="lazy" decoding="async" src="assets/whatsapp/whatsapp-glyph-wit.svg" alt="" width="22" height="22" style="flex: none; display: block">Verstuur via WhatsApp</button>
-<p style="margin: 0; font-size: 13px; color: #555D63">Gratis en vrijblijvend. Wij gebruiken uw gegevens alleen om contact met u op te nemen.</p>
+<p style="margin: 0; font-size: 14px; color: #555D63">Gratis en vrijblijvend. Wij gebruiken uw gegevens alleen om contact met u op te nemen.</p>
 </form>
 </div>
 
 <footer style="border-top: 1px solid #2A2F33">
-<div style="max-width: 1280px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 56px) 32px; display: flex; flex-direction: column; gap: 48px">
+<div style="max-width: 1280px; margin: 0 auto; padding: 56px clamp(20px, 4vw, 56px) 32px; display: flex; flex-direction: column; gap: 56px">
 <div style="display: flex; flex-wrap: wrap; gap: 40px 64px">
 <div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
-<div style="display: flex; align-items: center; gap: 12px"><svg aria-hidden="true" width="73" height="36" viewBox="0 6 97 48" fill="none" style="flex: none"><polygon points="0,54 19,6 29,6 48,54 38,54 24,18.5 10,54" fill="currentColor"/><polygon points="12.6,47 14.9,39 33.1,39 35.4,47" fill="currentColor"/><path d="M95 0L70 30L95 60" stroke="#1F4FE0" stroke-width="10"/><rect x="56" y="6" width="10" height="48" fill="currentColor"/></svg><span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; letter-spacing: -0.025em; line-height: 1"><span style="font-weight: 500">Kozijntechniek</span></span></div>
-<div style="font-size: 15px; line-height: 1.6; color: #B9C1C7; max-width: 320px">Specialist in kunststof kozijnen: plaatsen, reparatie en onderhoud. Vanuit Lelystad, tot 80 km in de omtrek.</div>
-<div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 8px">
-<span style="border: 1px dashed #7A848C; border-radius: 999px; padding: 10px 16px; font-size: 13px; color: #B9C1C7">[KEURMERK 1]</span>
-<span style="border: 1px dashed #7A848C; border-radius: 999px; padding: 10px 16px; font-size: 13px; color: #B9C1C7">[KEURMERK 2]</span>
+<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; letter-spacing: -0.02em; line-height: 1.25; max-width: 360px">Kunststof kozijnen, ramen en deuren. Plaatsen, reparatie en onderhoud.</div>
+<div style="font-size: 16px; line-height: 1.6; color: #B9C1C7; max-width: 340px">Vanuit Lelystad, tot 80 km in de omtrek. Verder weg in overleg.</div>
 </div>
-</div>
-<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 4px; font-size: 15px">
+<div style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 2px; font-size: 16px">
 <div style="font-weight: 600; padding-bottom: 8px">Diensten</div>
-<a href="#diensten" style="color: #B9C1C7; text-decoration: none; padding: 8px 0">Plaatsen</a>
-<a href="#diensten" style="color: #B9C1C7; text-decoration: none; padding: 8px 0">Reparatie</a>
-<a href="#diensten" style="color: #B9C1C7; text-decoration: none; padding: 8px 0">Onderhoud</a>
+<a href="#diensten" style="color: #D5DADE; text-decoration: none; padding: 9px 0">Plaatsen</a>
+<a href="#diensten" style="color: #D5DADE; text-decoration: none; padding: 9px 0">Reparatie</a>
+<a href="#diensten" style="color: #D5DADE; text-decoration: none; padding: 9px 0">Onderhoud</a>
+<a href="#producten" style="color: #D5DADE; text-decoration: none; padding: 9px 0">Ramen en deuren</a>
 </div>
-<div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #B9C1C7; line-height: 1.6">
-<div style="font-weight: 600; color: #FFFFFF; padding-bottom: 4px">Contact</div>
-<div>Voorbeeldstraat 12</div>
-<div>1234 AB Lelystad</div>
-<div>06 39 28 29 68</div>
-<div>info@uwbedrijf.nl</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 2px; font-size: 16px">
+<div style="font-weight: 600; padding-bottom: 8px">Contact</div>
+<a href="tel:+31639282968" style="color: #FFFFFF; text-decoration: none; padding: 9px 0; font-weight: 600">06 39 28 29 68</a>
+<a href="https://wa.me/31639282968?text=Hallo%20AK%20Kozijntechniek%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen." style="color: #D5DADE; text-decoration: none; padding: 9px 0">Stuur een WhatsApp</a>
+<a href="#offerte" style="color: #D5DADE; text-decoration: none; padding: 9px 0">Offerte aanvragen</a>
+<div style="color: #B9C1C7; padding: 9px 0">Ma t/m vr 8.00 – 17.30 uur</div>
 </div>
 </div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(34px, 10.4vw, 156px); letter-spacing: -0.05em; line-height: 0.9; color: #FFFFFF; overflow-wrap: anywhere">AK Kozijntechniek</div>
-<div style="border-top: 1px solid #2A2F33; padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #B9C1C7">
+<a href="#top" aria-label="AK Kozijntechniek, naar boven" style="display: flex; align-items: center; gap: clamp(10px, 2vw, 28px); color: #FFFFFF; text-decoration: none">
+<svg aria-hidden="true" viewBox="0 6 97 48" fill="none" style="flex: none; height: clamp(34px, 9vw, 124px); width: auto"><polygon points="0,54 19,6 29,6 48,54 38,54 24,18.5 10,54" fill="currentColor"/><polygon points="12.6,47 14.9,39 33.1,39 35.4,47" fill="currentColor"/><path d="M95 0L70 30L95 60" stroke="#1F4FE0" stroke-width="10"/><rect x="56" y="6" width="10" height="48" fill="currentColor"/></svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: clamp(30px, 7.9vw, 110px); letter-spacing: -0.04em; line-height: 1">Kozijntechniek</span>
+</a>
+<div style="border-top: 1px solid #2A2F33; padding-top: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 24px; font-size: 14px; color: #B9C1C7">
 <span>© 2026 AK Kozijntechniek · KvK 92255019</span>
-<span>Algemene voorwaarden · Privacy</span>
+<span style="display: flex; flex-wrap: wrap; gap: 0 24px">
+<a href="voorwaarden.html" style="color: #D5DADE; padding: 12px 0">Algemene voorwaarden</a>
+<a href="privacy.html" style="color: #D5DADE; padding: 12px 0">Privacyverklaring</a>
+</span>
 </div>
 </div>
 </footer>

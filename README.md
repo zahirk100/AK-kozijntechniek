@@ -5,6 +5,8 @@ Website van AK Kozijntechniek: kunststof kozijnen, ramen en deuren. Plaatsen, re
 ## Opbouw
 
 - `index.html` – de hele pagina (opmaak staat in de pagina zelf)
+- `privacy.html`, `voorwaarden.html` – privacyverklaring en algemene voorwaarden
+- `assets/fonts/` – lettertypen (Inter en Space Grotesk), vanaf de eigen site geladen
 - `assets/site.js` – kozijnsamensteller en contactformulier
 - `assets/img/` – foto's (voorbeeldfoto's van Unsplash, te vervangen door eigen werk)
 - `assets/logo/` – logo als SVG en PNG (liggend, embleem, beeldmerk, profielfoto), `assets/favicon.svg`
@@ -17,8 +19,8 @@ De volgende gegevens zijn voorbeeldwaarden:
 
 - 1.250+ kozijnen en 10 jaar garantie
 - doorlooptijden (binnen 1 week, 2 werkdagen, 6 tot 8 weken, 1 tot 3 dagen) en onderhoudsplan vanaf € 89
-- e-mailadres `info@uwbedrijf.nl` en adres `Voorbeeldstraat 12, 1234 AB Lelystad`
-- `[KEURMERK 1]` en `[KEURMERK 2]` in de footer
+- de algemene voorwaarden zijn een concept: de waarden tussen haken (aanbetaling, betalingstermijn, garantie) moeten nog worden ingevuld en de tekst moet juridisch worden nagekeken
+- e-mailadres, bezoekadres en keurmerken staan nog niet op de site
 - de projectomschrijvingen bij "Recent opgeleverd"
 
 Het contactformulier heeft geen server: het opent WhatsApp met de ingevulde aanvraag.
