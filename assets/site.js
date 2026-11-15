@@ -144,4 +144,15 @@
       window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
     });
   }
+
+  /* ---------- Mobiel menu: sluit na een keuze of met Escape ---------- */
+  var menu = document.querySelector('details.mnav');
+  if (menu) {
+    menu.addEventListener('click', function (ev) {
+      if (ev.target.closest('a')) menu.open = false;
+    });
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape') menu.open = false;
+    });
+  }
 })();

@@ -33,9 +33,13 @@ details[open] .faq-plus{transform:rotate(45deg)}
 @keyframes openR{from{transform:translateX(0)}}
 @keyframes pulse{from{transform:scale(.2);opacity:.9}to{transform:scale(1);opacity:0}}
 .pulse{transform-box:view-box;transform-origin:240px 240px;animation:pulse 3.2s ease-out infinite}
+.mnav{display:none}
+.mnav[open] .mnav-bars{display:none}
+.mnav:not([open]) .mnav-x{display:none}
+@media (max-width:1180px){.mnav{display:block}}
 @keyframes barIn{from{opacity:0;transform:translateY(24px);visibility:hidden}to{opacity:1;transform:none;visibility:visible}}
 @supports (animation-timeline: scroll()){.contactbar>div{animation:barIn linear both;animation-timeline:scroll(root);animation-range:320px 560px}}
-@media (max-width:520px){.nav-long{display:none}}
+@media (max-width:520px){.nav-cta{display:none !important}}
 @keyframes lift{from{transform:translateY(56px)}to{transform:none}}
 @supports (animation-timeline: view()){@media (prefers-reduced-motion:no-preference){.reveal{animation:lift linear both;animation-timeline:view();animation-range:entry 0% entry 70%}}}
 @media (prefers-reduced-motion:reduce){.sash,.pulse{animation:none}}
@@ -52,7 +56,7 @@ html{scroll-behavior:smooth}
 <div style="position: relative; border-radius: 28px; overflow: hidden; background: #101315; color: #FFFFFF; display: flex; flex-direction: column">
 
 <header style="position: relative; padding: 20px 20px 0">
-<div style="max-width: 1280px; margin: 0 auto; background: #1B1F22; border: 1px solid #33393E; border-radius: 999px; padding: 10px 10px 10px 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<div style="position: relative; max-width: 1280px; margin: 0 auto; background: #1B1F22; border: 1px solid #33393E; border-radius: 999px; padding: 10px 10px 10px 22px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
 <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF; min-height: 44px">
 <svg aria-hidden="true" width="57" height="28" viewBox="0 6 97 48" fill="none" style="flex: none"><polygon points="0,54 19,6 29,6 48,54 38,54 24,18.5 10,54" fill="currentColor"/><polygon points="12.6,47 14.9,39 33.1,39 35.4,47" fill="currentColor"/><path d="M95 0L70 30L95 60" stroke="#1F4FE0" stroke-width="10"/><rect x="56" y="6" width="10" height="48" fill="currentColor"/></svg>
 <span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; letter-spacing: -0.025em; line-height: 1"><span style="font-weight: 500">Kozijntechniek</span></span>
@@ -65,9 +69,29 @@ html{scroll-behavior:smooth}
 <a href="#projecten" style="text-decoration: none; padding: 12px 0; color: #FFFFFF">Projecten</a>
 <a href="#werkgebied" style="text-decoration: none; padding: 12px 0; color: #FFFFFF">Werkgebied</a>
 </nav>
-<div style="display: flex; align-items: center; gap: 18px">
-<a class="nav-phone" href="tel:+31639282968" style="font-weight: 600; font-size: 15px; text-decoration: none; padding: 12px 0; color: #FFFFFF">06 39 28 29 68</a>
-<a href="#offerte" style="background: #FFFFFF; color: #101315; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 22px; border-radius: 999px; white-space: nowrap">Offerte<span class="nav-long">&nbsp;aanvragen</span></a>
+<div style="display: flex; align-items: center; gap: 10px">
+<a class="nav-phone" href="tel:+31639282968" style="font-weight: 600; font-size: 15px; text-decoration: none; padding: 12px 8px 12px 0; color: #FFFFFF">06 39 28 29 68</a>
+<a class="nav-cta" href="#offerte" style="background: #FFFFFF; color: #101315; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 22px; border-radius: 999px; white-space: nowrap">Offerte<span class="nav-long">&nbsp;aanvragen</span></a>
+<details class="mnav">
+<summary aria-label="Menu" style="width: 46px; height: 46px; border-radius: 50%; border: 1px solid #7A848C; display: flex; align-items: center; justify-content: center; box-sizing: border-box">
+<svg class="mnav-bars" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"><path d="M3 6h16M3 11h16M3 16h16"/></svg>
+<svg class="mnav-x" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"><path d="M5 5l12 12M17 5L5 17"/></svg>
+</summary>
+<nav aria-label="Mobiel menu" style="position: absolute; top: calc(100% + 10px); left: 0; right: 0; z-index: 60; background: #1B1F22; border: 1px solid #33393E; border-radius: 24px; padding: 10px; display: flex; flex-direction: column; box-shadow: 0 24px 60px rgba(0,0,0,0.5)">
+<a href="#diensten" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Diensten<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<a href="#producten" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Assortiment<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<a href="#kleuren" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Kozijn samenstellen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<a href="#werkwijze" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Werkwijze<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<a href="#projecten" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Projecten<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<a href="#werkgebied" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Werkgebied<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<a href="#vragen" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Veelgestelde vragen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<a href="#offerte" style="display: flex; align-items: center; justify-content: space-between; min-height: 54px; padding: 0 16px; border-radius: 14px; color: #FFFFFF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 20px; letter-spacing: -0.01em; border-bottom: 1px solid #33393E">Contact en offerte<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="#B9C1C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4l7 7-7 7"/></svg></a>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; padding: 14px 6px 6px">
+<a href="tel:+31639282968" style="flex: 1 1 200px; white-space: nowrap; display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border-radius: 999px; background: #FFFFFF; color: #101315; text-decoration: none; font-weight: 600; font-size: 15px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="#101315" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 4 4L14 11l5 2v4a2 2 0 0 1-2 2A14 14 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Bel 06 39 28 29 68</a>
+<a href="https://wa.me/31639282968?text=Hallo%20AK%20Kozijntechniek%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen." style="flex: 1 1 200px; white-space: nowrap; display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border-radius: 999px; background: #0F7B4F; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"><path d="M11 2.5a8.5 8.5 0 0 0-7.4 12.7L2.5 19.5l4.4-1.1A8.5 8.5 0 1 0 11 2.5z"/></svg>WhatsApp</a>
+</div>
+</nav>
+</details>
 </div>
 </div>
 </header>
