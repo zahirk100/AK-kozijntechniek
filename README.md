@@ -46,5 +46,5 @@ De website zelf heeft geen bouwstap nodig; alleen dit ene bestand wordt gebundel
 
 - `robots.txt` en `sitemap.xml` staan in de hoofdmap; meld de sitemap aan in Google Search Console.
 - De pagina bevat een canonieke link, een deelkaart (Open Graph) en gestructureerde gegevens (bedrijf en veelgestelde vragen).
-- Het webadres staat nu op `https://akkozijntechniek.nl`. Bij een eigen domein moet dat adres worden aangepast in de canonieke link, de deelkaart, de gestructureerde gegevens, `robots.txt` en `sitemap.xml`.
+- Het webadres staat nu op `https://www.akkozijntechniek.nl`. Bij een eigen domein moet dat adres worden aangepast in de canonieke link, de deelkaart, de gestructureerde gegevens, `robots.txt` en `sitemap.xml`.
 - `voorwaarden.html` staat op `noindex` zolang de tekst een concept is.
